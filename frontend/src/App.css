@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/*import poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/*import georgia*/
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+.App {
+  text-align: center;
+  background-color: #ffffff;
+  min-height: 100vh; 
+}
+
+.Header-title {
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 0; /* Reset margin for better alignment */
+  font-family: 'Pacifico', cursive;
+  margin-left: 20px; /* Added margin-left for spacing */
+}
+
+.Header-logButton {
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 0; /* Reset margin for better alignment */
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto; /* Added margin-left for spacing */
+  margin-right: 20px; /* Added margin-right for spacing */
+}
+
+.images-container {
+  display: flex; /* Enables flexbox for side-by-side alignment */
+  justify-content: space-between; /* Places items at the far ends */
+  width: 80%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the container */
+  align-items: center; /* Aligns images vertically */
+}
+
+.moliere-image {
+  width: 350px; /* Sets a smaller width for the image */
+  height: 300px; /* Sets a smaller height for the image */
+  /* Remove margin-right: auto; to allow space-between to work */
+}
+
+.george-image {
+  width: 250px; /* Sets a smaller width for the image */
+  height: 300px; /* Sets a smaller height for the image */
+  display: block; /* Ensures the image is treated as a block element */
+  border-radius: 5%; /* Makes the image circular */
+}
+.start-message {
+  margin: 0; /* Reset margin for better alignment */
+  font-family: 'Poppins', sans-serif;
+  margin-top: 80px; /* Added margin-top for spacing */
+}
+
+.start-text {
+  font-size: calc(30px + 2vmin);
+  color: rgb(0, 0, 0);
+  margin: 0; /* Reset margin for better alignment */
+  margin-top: 80px; /* Added margin-top for spacing */
+  font-family: 'Georgia', serif;
+}
+
+.start-text-subtitle {
+  font-size: calc(5px + 2vmin);
+  color: rgb(31, 31, 31);
+  margin: 0; /* Reset margin for better alignment */
+  margin-top: 15px; /* Added margin-top for spacing */
+  font-family: 'Poppins', sans-serif;
+}
+
+.flashing-text {
+  font-size: calc(30px + 2vmin);
+  color: rgb(70, 70, 70);
+  font-weight: bold;
+  margin: 0; /* Reset margin for better alignment */
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px; /* Added margin-top for spacing */
+  animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.01);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.LogButton {
+  background-color: #ffffff; /* Changed to a light blue color */
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: calc(5px + 2vmin);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.SignButton {
+  background-color: #000000; /* Changed to a light blue color */
+  color: rgb(252, 252, 252);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: calc(5px + 2vmin);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.Page {
+  width: 60%;
+  height: 85vh; /* Changed min-height to height for proper centering */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  margin: auto; /* Ensures centering within the parent container */
+}
+.Page-comments {
+  display: flex;
+  height: fit-content;
+  padding: 10px;
+  margin-top: auto; /* Reset margin for better alignment */
+  margin-bottom: 15px; /* Added margin-bottom for spacing */
+  background-color: #f0f0f0;
+}
+
+.Page-comments-list {
+  flex: 1; /* Allows the comments list to take available space */
+  overflow-y: auto; /* Enables scrolling for the comments list */
+  padding: 10px;
+  margin-right: 20px; /* Added margin-right for spacing */
+  background-color: #ffffff; /* Light background for comments */
+  border-radius: 5px;
+}
+
+.Page-comments-input {
+  margin-top: 80; /* Added margin-top for spacing */
+  width: 100%;
+  height: 80px; /* Fixed height for the input area */
+  padding: 10px;
+  border: none;
+  font-size: calc(5px + 2vmin);
+  font-family: 'Poppins', sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: #f0f0f0; /* Light background for input */
+}
+
+.Page-comments-button {
+  margin-left: 100px; /* Added margin-left for spacing */
+  background-color: #212020; /* Changed to a light blue color */
+  color: rgb(252, 252, 252);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: calc(5px + 2vmin);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.Page-comments-title {
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 0; /* Reset margin for better alignment */
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px; /* Added margin-bottom for spacing */
+}
+
+.Page-content {
+  overflow-y: auto; /* Allows scrolling if content overflows */
+  background-color: #f6f6f6;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px; /* Fixed height for the header */
+  background-color: #fafafa; /* Changed to a light blue color */
+  color: rgb(0, 0, 0);
+  font-size: calc(5px + 2vmin);
+  font-weight: bold;
+  margin-bottom: 30px; /* Added margin-bottom for spacing */
+}
+
+
+
+.comments-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: #f0f0f0;
+  height: 100%;
+  overflow: auto;
+}
+
+.text {
+  font-size: 18px;
+  color: #282c34;
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Styles pour les boutons d'action */
+.action-buttons {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+  padding: 5px;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  transform: scale(1.1);
+}
+
+/* Style pour le cœur lorsqu'il est actif */
+.action-button.liked i {
+  color: #ff3366;
+}
+
+/* Style pour le bouton de partage */
+.action-button i.fa-share-alt {
+  color: #3498db;
+}
+

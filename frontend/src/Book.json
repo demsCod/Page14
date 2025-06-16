@@ -1,0 +1,50 @@
+[
+  {
+    "id": 2,
+    "book_title" : "L' Odyssee d'Homère",
+    "page_src": "Lody.png",
+    "comments": [
+      {
+      "id": 1,
+      "comment_text": "Un livre fascinant qui nous transporte dans un autre temps.",
+      "user": "Alice"
+      },
+      {
+      "id": 2,
+      "comment_text": "Une épopée époustouflante, pleine d'aventures.",
+      "user": "Bob"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "book_title": "Le Vicomte pourfendu",
+    "page_src": "LeVicomtePourfendu.png",
+    "comments": [
+      {
+        "id": 1,
+        "comment_text": "Un chef-d'œuvre de la littérature française.",
+        "user": "Jean"
+      },
+      {
+        "id": 2,
+        "comment_text": "Une histoire captivante et pleine d'humour.",
+        "user": "Marie"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "book_title": "Le Dernier Jour d'un Condamné",
+    "page_src": "LeDernierJour.png",
+    "comments": [
+      
+    ]
+  },
+  {
+    "id": 4,
+    "book_title": "Les Caracteres",
+    "page_src": "LesCaracteres.png",
+    "comments" : []
+  }
+]
