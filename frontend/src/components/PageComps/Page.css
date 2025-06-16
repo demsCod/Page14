@@ -21,6 +21,8 @@
   transform: scale(1.1);
 }
 
+
+
 /* Style pour le cœur lorsqu'il est actif */
 .action-button.liked i {
   color: #ff3366;
@@ -31,18 +33,26 @@
   color: #3498db;
 }
 
+.PageAndComments {
+    display: flex;
+   /*center the content*/
+    justify-content: center;
+    width: 80%;
+    height: 60%;
+    background-color: #ffffff;
+}
+
 .Page {
-    width: 60%;
-    height: 120%;
-    border-radius: 2%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 255, 255);
-    margin: 2% auto;
     display: flex;
 }
 .Page-content {
-    overflow-y: auto;
-    width: 100%;
+    width: 60%;
+    height: 50%;
     background-color: #ffffff;
 }
 
@@ -50,7 +60,6 @@
     display: flex;
     height: auto;
     padding: 2%;
-    margin-top: auto;
 }
 
 .Page-comments-list {
@@ -63,10 +72,10 @@
 }
 
 .Page-comments-input {
-    margin-top: 5%;
     width: 50%;
     height: 100%;
     padding: 2%;
+    margin-right: auto;
     border: none;
     border-radius: 20px;
     font-size: calc(0.8vw  + 0.5vmin);
@@ -77,12 +86,13 @@
 
 .Page-image {
     width: 100%;
-    height: 100%;
-    margin-right: 2%;
+    height: 60%;
+  
+    margin-left: auto;
 }
 .comments-section {
-    height: 200%;
-    width: 100%;
+    height: 100%;
+    width: 50%;
     flex-direction: column;
     background-color: #ffffff;
     overflow: auto;
@@ -115,10 +125,8 @@
 .action-button {
   background: none;
   border: none;
-  font-size: 400%;
+  font-size: 100%;
   cursor: pointer;
-  margin-left: auto;
-  padding: 5px;
   color: #444;
   transition: all 0.3s ease;
 }

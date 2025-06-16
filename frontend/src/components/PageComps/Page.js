@@ -40,7 +40,7 @@ export function PageRender({ data }) {
   };
 
   return (
-    <div>
+    <div className='PageAndComments'>
       <div className='Page'>
         <motion.div
           className='Page-content'
@@ -55,18 +55,11 @@ export function PageRender({ data }) {
             className='Page-image'
           />
         </motion.div>
+      </div>
         <div className='comments-section'>
           <h2 className='Page-comments-title'>{data.data.book_title}</h2>
           
           <div className='Page-comments'>
-            {/* Nouveaux boutons */}
-          </div>
-              <input
-                type="text"
-                placeholder="Add a comment..."
-                className='Page-comments-input'
-              />
-              <button className='Page-comments-button'>Submit</button>
             <div className='action-buttons'>
               <button 
                 className={`action-button ${liked ? 'liked' : ''}`}
@@ -80,9 +73,16 @@ export function PageRender({ data }) {
               >
                 <i className='fas fa-link'></i>
               </button>
+              </div>
+                  <input
+                    type="text"
+                    placeholder="Add a comment..."
+                    className='Page-comments-input'
+                  />
+                  <button className='Page-comments-button'>Submit</button>
             </div>
-        </div>
-      </div>
+            </div>
+            {/* Nouveaux boutons */}
     </div>
   );
 }
