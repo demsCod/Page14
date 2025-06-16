@@ -1,4 +1,4 @@
-import PageRender from './Page'
+import PageRender from './components/PageComps/Page'
 import './App.css';
 import databook from './Book.json'
 import { useEffect, useState } from 'react';

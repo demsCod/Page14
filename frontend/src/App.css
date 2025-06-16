@@ -6,11 +6,22 @@
 .App {
   text-align: center;
   background-color: #ffffff;
-  min-height: 100vh; 
+  min-height: 100vh; /* Ensures the app takes full height */
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 20%; /* Fixed height for the header */
+  background-color: #ffffff; /* Changed to a light blue color */
+  color: rgb(0, 0, 0);
+  font-size: calc(5px + 2vmin);
+  font-weight: bold;
 }
 
 .Header-title {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(7px + 2vmin);
   color: rgb(0, 0, 0);
   font-weight: bold;
   margin: 0; /* Reset margin for better alignment */
@@ -19,7 +30,6 @@
 }
 
 .Header-logButton {
-  font-size: calc(10px + 2vmin);
   color: rgb(0, 0, 0);
   font-weight: bold;
   margin: 0; /* Reset margin for better alignment */
@@ -37,21 +47,20 @@
 }
 
 .moliere-image {
-  width: 350px; /* Sets a smaller width for the image */
-  height: 300px; /* Sets a smaller height for the image */
+  width: 30%; /* Sets a smaller width for the image */
+  height: 40%; /* Sets a smaller height for the image */
   /* Remove margin-right: auto; to allow space-between to work */
 }
 
 .george-image {
-  width: 250px; /* Sets a smaller width for the image */
-  height: 300px; /* Sets a smaller height for the image */
-  display: block; /* Ensures the image is treated as a block element */
-  border-radius: 5%; /* Makes the image circular */
+  width: 30%; /* Sets a smaller width for the image */
+  height: 20%; /* Sets a smaller height for the image */
+  border-radius: 27%; /* Makes the image circular */
 }
 .start-message {
   margin: 0; /* Reset margin for better alignment */
   font-family: 'Poppins', sans-serif;
-  margin-top: 80px; /* Added margin-top for spacing */
+  margin-top: 100px; /* Added margin-top for spacing */
 }
 
 .start-text {
@@ -76,7 +85,7 @@
   font-weight: bold;
   margin: 0; /* Reset margin for better alignment */
   font-family: 'Poppins', sans-serif;
-  margin-top: 40px; /* Added margin-top for spacing */
+  margin-top: 200px; /* Added margin-top for spacing */
   animation: pulse-animation 1.5s infinite;
 }
 
@@ -117,96 +126,6 @@
   font-size: calc(5px + 2vmin);
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-}
-
-.Page {
-  width: 60%;
-  height: 85vh; /* Changed min-height to height for proper centering */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  margin: auto; /* Ensures centering within the parent container */
-}
-.Page-comments {
-  display: flex;
-  height: fit-content;
-  padding: 10px;
-  margin-top: auto; /* Reset margin for better alignment */
-  margin-bottom: 15px; /* Added margin-bottom for spacing */
-  background-color: #f0f0f0;
-}
-
-.Page-comments-list {
-  flex: 1; /* Allows the comments list to take available space */
-  overflow-y: auto; /* Enables scrolling for the comments list */
-  padding: 10px;
-  margin-right: 20px; /* Added margin-right for spacing */
-  background-color: #ffffff; /* Light background for comments */
-  border-radius: 5px;
-}
-
-.Page-comments-input {
-  margin-top: 80; /* Added margin-top for spacing */
-  width: 100%;
-  height: 80px; /* Fixed height for the input area */
-  padding: 10px;
-  border: none;
-  font-size: calc(5px + 2vmin);
-  font-family: 'Poppins', sans-serif;
-  color: rgb(0, 0, 0);
-  background-color: #f0f0f0; /* Light background for input */
-}
-
-.Page-comments-button {
-  margin-left: 100px; /* Added margin-left for spacing */
-  background-color: #212020; /* Changed to a light blue color */
-  color: rgb(252, 252, 252);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: calc(5px + 2vmin);
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-}
-
-.Page-comments-title {
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  margin: 0; /* Reset margin for better alignment */
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 20px; /* Added margin-bottom for spacing */
-}
-
-.Page-content {
-  overflow-y: auto; /* Allows scrolling if content overflows */
-  background-color: #f6f6f6;
-}
-
-.Header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 60px; /* Fixed height for the header */
-  background-color: #fafafa; /* Changed to a light blue color */
-  color: rgb(0, 0, 0);
-  font-size: calc(5px + 2vmin);
-  font-weight: bold;
-  margin-bottom: 30px; /* Added margin-bottom for spacing */
-}
-
-
-
-.comments-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  background-color: #f0f0f0;
-  height: 100%;
-  overflow: auto;
 }
 
 .text {
@@ -252,33 +171,4 @@
 
 
 /* Styles pour les boutons d'action */
-.action-buttons {
-  margin: 10px 0;
-  padding: 0 10px;
-}
-
-.action-button {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  margin-right: 15px;
-  padding: 5px;
-  color: #444;
-  transition: all 0.3s ease;
-}
-
-.action-button:hover {
-  transform: scale(1.1);
-}
-
-/* Style pour le cœur lorsqu'il est actif */
-.action-button.liked i {
-  color: #ff3366;
-}
-
-/* Style pour le bouton de partage */
-.action-button i.fa-share-alt {
-  color: #3498db;
-}
 

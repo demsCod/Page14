@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+import './Page.css';
 import { motion } from 'framer-motion';
 
 export function PageRender({ data }) {
@@ -14,13 +14,12 @@ export function PageRender({ data }) {
       </div>
     );
   }
-  console.log(data.data.page_src);
   
   // Use a safer approach to import images
   let imageSrc;
   try {
     // Use a dynamic import with require
-    imageSrc = require(`../public/pages/${data.data.page_src}`);
+    imageSrc = require(`../../../public/pages/${data.data.page_src}`);
     console.log("Image source:", imageSrc);
   } catch (error) {
     console.error("Failed to load image:", error);
@@ -52,6 +51,8 @@ export function PageRender({ data }) {
         >
           <img
             src={imageSrc}
+            alt={data.data.page_src}
+            className='Page-image'
           />
         </motion.div>
         <div className='comments-section'>
@@ -59,6 +60,13 @@ export function PageRender({ data }) {
           
           <div className='Page-comments'>
             {/* Nouveaux boutons */}
+          </div>
+              <input
+                type="text"
+                placeholder="Add a comment..."
+                className='Page-comments-input'
+              />
+              <button className='Page-comments-button'>Submit</button>
             <div className='action-buttons'>
               <button 
                 className={`action-button ${liked ? 'liked' : ''}`}
@@ -73,13 +81,6 @@ export function PageRender({ data }) {
                 <i className='fas fa-link'></i>
               </button>
             </div>
-              <input
-                type="text"
-                placeholder="Add a comment..."
-                className='Page-comments-input'
-              />
-              <button className='Page-comments-button'>Submit</button>
-          </div>
         </div>
       </div>
     </div>

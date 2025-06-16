@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+.action-buttons {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 15px;
+  padding: 5px;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  transform: scale(1.1);
+}
+
+/* Style pour le cœur lorsqu'il est actif */
+.action-button.liked i {
+  color: #ff3366;
+}
+
+/* Style pour le bouton de partage */
+.action-button i.fa-share-alt {
+  color: #3498db;
+}
+
+.Page {
+    width: 60%;
+    height: 120%;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    margin: 2% auto;
+    display: flex;
+}
+.Page-content {
+    overflow-y: auto;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.Page-comments {
+    display: flex;
+    height: auto;
+    padding: 2%;
+    margin-top: auto;
+}
+
+.Page-comments-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2%;
+    margin-right: 4%;
+    background-color: #ffffff;
+    border-radius: 1%;
+}
+
+.Page-comments-input {
+    margin-top: 5%;
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+    border: none;
+    border-radius: 20px;
+    font-size: calc(0.8vw  + 0.5vmin);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #f0f0f0;
+}
+
+.Page-image {
+    width: 100%;
+    height: 100%;
+    margin-right: 2%;
+}
+.comments-section {
+    height: 200%;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+.Page-comments-button {
+    margin-left: 5%;
+    background-color: #212020;
+    color: rgb(252, 252, 252);
+    border: none;
+    padding: 2% 4%;
+    border-radius: 10%;
+    cursor: pointer;
+    font-size: calc(0.8vw + 0.5vmin);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.Page-comments-title {
+    font-size: calc(2vh + 1vmin);
+    color: rgb(0, 0, 0);
+    background-color:#ffffff;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 80%;
+}
+
+
+.action-button {
+  background: none;
+  border: none;
+  font-size: 400%;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 5px;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  transform: scale(1.2);
+}
+
+/* Style pour le cœur lorsqu'il est actif */
+.action-button.liked i {
+  color: #ff3366;
+}
